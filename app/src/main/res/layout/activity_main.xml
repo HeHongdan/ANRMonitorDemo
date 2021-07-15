@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Monitor3Activity">
 
     <TextView
         android:id="@+id/sample_text"
@@ -17,23 +17,31 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/startMonitor"
+        android:id="@+id/tv_anr1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="监控死锁"
-        tools:layout_editor_absoluteX="154dp"
-        tools:layout_editor_absoluteY="398dp"
+        android:text="方案 1"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sample_text"/>
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <Button
-        android:id="@+id/startAnr"
+        android:id="@+id/tv_anr2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="卡顿导致ANR"
-        tools:layout_editor_absoluteX="154dp"
-        tools:layout_editor_absoluteY="398dp"
+        android:text="方案 2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sample_text"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_anr1" />
+
+    <Button
+        android:id="@+id/tv_anr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="最终方案"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_anr2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -42,6 +42,9 @@ object DeadLockUtil {
         thread2.start()
     }
 
+    /**
+     * 死锁导致ANR
+     */
     fun createDeadLockAnr(){
         val lock1 = Object()
         val lock2 = Object()
@@ -51,7 +54,7 @@ object DeadLockUtil {
                 Thread.sleep(100)
 
                 synchronized(lock2){
-                    Log.d(MainActivity.TAG, "testAnr: getLock2")
+                    Log.d(Monitor3Activity.TAG, "testAnr: getLock2")
                 }
             }
         }
@@ -61,7 +64,7 @@ object DeadLockUtil {
             Thread.sleep(100)
 
             synchronized(lock1){
-                Log.d(MainActivity.TAG, "testAnr: getLock1")
+                Log.d(Monitor3Activity.TAG, "testAnr: getLock1")
             }
         }
     }

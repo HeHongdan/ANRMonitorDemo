@@ -1,4 +1,4 @@
-package com.hehongdan.anr
+package com.hehongdan.anr.plan1
 
 import android.content.Context
 import android.content.Intent
@@ -13,12 +13,19 @@ import androidx.databinding.DataBindingUtil
 import com.lanshifu.demo.anrmonitor.R
 import com.lanshifu.demo.anrmonitor.databinding.ActivityMonitor1Binding
 
+/**
+ * 类描述：。
+ *
+ * @author HeHongdan
+ * @date 7/15/21
+ * @since v7/15/21
+ */
 class Monitor1Activity : AppCompatActivity() {
 
     /** 认定卡顿的时间。  */
     private val THREAD_HOLD = 16
     /** 耗时操作时间。  */
-    private val SLEEP_TIME = 17 // >16毫秒
+    private val SLEEP_TIME = 1000 // >16毫秒
     private val TAG = "【HHD】卡顿性能检测"
     private val mCheckTask = CheckTask()
 

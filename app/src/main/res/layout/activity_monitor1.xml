@@ -8,13 +8,13 @@
   <data>
     <variable
         name="user"
-        type="com.hehongdan.anr.Monitor1" />
+        type="com.hehongdan.anr.plan1.Monitor1" />
   </data>
 
   <androidx.constraintlayout.widget.ConstraintLayout
       android:layout_width="match_parent"
       android:layout_height="match_parent"
-      tools:context="com.hehongdan.anr.Monitor1Activity">
+      tools:context="com.hehongdan.anr.plan1.Monitor1Activity">
 
     <Button
         android:id="@+id/btn_1"

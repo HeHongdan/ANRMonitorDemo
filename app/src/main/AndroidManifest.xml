@@ -3,6 +3,7 @@
     package="com.lanshifu.demo.anrmonitor" >
 
     <application
+        android:name="com.hehongdan.anr.plan2.ANRWatchdogTestApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -10,9 +11,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyNativeApplication" >
 
-        <activity android:name="com.hehongdan.anr.Monitor1Activity" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".MainActivity_" >
+        <activity android:name="com.hehongdan.anr.plan1.Monitor1Activity" />
+        <activity android:name="com.hehongdan.anr.plan2.Monitor2Activity" />
+        <activity android:name=".Monitor3Activity" />
+        <activity android:name="com.lanshifu.demo.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
