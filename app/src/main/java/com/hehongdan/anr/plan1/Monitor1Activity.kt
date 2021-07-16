@@ -14,7 +14,7 @@ import com.lanshifu.demo.anrmonitor.R
 import com.lanshifu.demo.anrmonitor.databinding.ActivityMonitor1Binding
 
 /**
- * 类描述：。
+ * 类描述：方案1。
  *
  * @author HeHongdan
  * @date 7/15/21

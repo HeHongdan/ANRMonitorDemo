@@ -1,4 +1,4 @@
-package com.hehongdan.anr.plan2;
+package com.hehongdan.anr.plan3;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -15,13 +15,13 @@ import androidx.annotation.NonNull;
 import com.lanshifu.demo.anrmonitor.R;
 
 /**
- * 类描述：。
+ * 类描述：方案3。
  *
  * @author HeHongdan
  * @date 7/15/21
  * @since v7/15/21
  */
-public class Monitor2Activity extends Activity {
+public class Monitor3Activity extends Activity {
 
     private final Object _mutex = new Object();
 
@@ -75,7 +75,7 @@ public class Monitor2Activity extends Activity {
 
 
     public static void start(@NonNull Context context) {
-        context.startActivity(new Intent(context, Monitor2Activity.class));
+        context.startActivity(new Intent(context, Monitor3Activity.class));
     }
 
     @SuppressLint("SetTextI18n")

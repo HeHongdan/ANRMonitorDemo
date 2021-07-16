@@ -1,4 +1,4 @@
-package com.lanshifu.demo.anrmonitor
+package com.hehongdan.anr.plan4
 
 import android.util.Log
 import kotlin.concurrent.thread
@@ -54,7 +54,7 @@ object DeadLockUtil {
                 Thread.sleep(100)
 
                 synchronized(lock2){
-                    Log.d(Monitor3Activity.TAG, "testAnr: getLock2")
+                    Log.d(Monitor4Activity.TAG, "testAnr: getLock2")
                 }
             }
         }
@@ -64,7 +64,7 @@ object DeadLockUtil {
             Thread.sleep(100)
 
             synchronized(lock1){
-                Log.d(Monitor3Activity.TAG, "testAnr: getLock1")
+                Log.d(Monitor4Activity.TAG, "testAnr: getLock1")
             }
         }
     }

@@ -6,7 +6,8 @@ import android.os.Looper;
 import android.util.Log;
 
 /**
- * 类描述：。
+ * 类描述：方案3。
+ * {@link com.lanshifu.demo.anrmonitor.AnrMonitor}的初始版，误差在5S内。
  *
  * @author HeHongdan
  * @date 7/15/21

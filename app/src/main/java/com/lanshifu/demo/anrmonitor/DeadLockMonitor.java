@@ -30,7 +30,7 @@ public class DeadLockMonitor {
         return lstThreads;
     }
 
-    void startMonitor() {
+    public void startMonitor() {
         int nativeInitResult = nativeInit(Build.VERSION.SDK_INT);
         Log.i(TAG, "nativeInit: " + nativeInitResult);
         HashMap<Integer, DeadLockThread> deadLock = new HashMap<>();

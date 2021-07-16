@@ -1,11 +1,12 @@
-package com.lanshifu.demo
+package com.hehongdan
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import com.hehongdan.anr.plan1.Monitor1Activity
-import com.hehongdan.anr.plan2.Monitor2Activity
+import com.hehongdan.anr.plan3.Monitor3Activity
+import com.hehongdan.anr.plan4.Monitor4Activity
 import com.lanshifu.demo.anrmonitor.R
 
 class MainActivity : AppCompatActivity() {
@@ -22,8 +23,12 @@ class MainActivity : AppCompatActivity() {
             Monitor1Activity.start(this@MainActivity)
         })
 
-        findViewById<Button>(R.id.tv_anr2).setOnClickListener(View.OnClickListener {
-            Monitor2Activity.start(this@MainActivity)
+        findViewById<Button>(R.id.tv_anr3).setOnClickListener(View.OnClickListener {
+            Monitor3Activity.start(this@MainActivity)
+        })
+
+        findViewById<Button>(R.id.tv_anr).setOnClickListener(View.OnClickListener {
+            Monitor4Activity.start(this@MainActivity)
         })
     }
 

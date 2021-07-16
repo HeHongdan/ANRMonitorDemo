@@ -1,4 +1,4 @@
-package com.hehongdan.anr.plan2;
+package com.hehongdan.anr.plan3;
 
 import android.app.Application;
 import android.util.Log;
@@ -30,10 +30,16 @@ public class ANRWatchdogTestApplication extends Application {
         }
     };
 
+
+
     @Override
     public void onCreate() {
         super.onCreate();
 
+        initAnrWatchDog();
+    }
+
+    private void initAnrWatchDog() {
         anrWatchDog
                 .setANRListener(new ANRWatchDog.ANRListener() {
                     @Override

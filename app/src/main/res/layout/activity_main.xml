@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Monitor3Activity">
+    tools:context="com.hehongdan.anr.plan4.Monitor4Activity">
 
     <TextView
         android:id="@+id/sample_text"
@@ -36,12 +36,21 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_anr1" />
 
     <Button
+        android:id="@+id/tv_anr3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="方案 3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_anr2" />
+
+    <Button
         android:id="@+id/tv_anr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="最终方案"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_anr2" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_anr3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
